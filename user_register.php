@@ -1,7 +1,7 @@
 <?php
 // register.php
 session_start();
-require 'includes/config.php'; // Include database connection
+require 'config.php'; // Include database connection
 
 // Define log file path
 $logFile = 'registration_log.txt';
@@ -435,4 +435,5 @@ document.getElementById('registerForm').addEventListener('submit', function(e) {
         }
     </script>
 </body>
+
 </html>

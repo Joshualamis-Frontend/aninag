@@ -1,9 +1,15 @@
 FROM php:8.2-apache
 
-# Enable Apache rewrite module
+# Install mysqli extension
+RUN docker-php-ext-install mysqli
+
+# Enable Apache rewrite
 RUN a2enmod rewrite
 
-# Copy project files to Apache root
+# Set ServerName to avoid warning
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+
+# Copy project files
 COPY . /var/www/html/
 
 # Set permissions

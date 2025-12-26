@@ -1,7 +1,7 @@
 <?php
 // admin_login.php
 session_start();
-require 'includes/config.php'; // Your database connection
+require 'config.php'; // Your database connection
 
 // Redirect if already logged in
 if (isset($_SESSION['admin_logged_in']) && $_SESSION['admin_logged_in'] === true) {
@@ -100,4 +100,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         </div>
     </div>
 </body>
+
 </html> 

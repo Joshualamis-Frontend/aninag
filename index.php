@@ -1174,15 +1174,16 @@ footer::before {
     <div class="hero-background"></div>         
     <div class="hero-pattern"></div>         
     <div class="hero-content" data-aos="fade-up">             
-        <h1>Discover Your Jungian Archetype<span> <?php 
+        <h1>ANINAG: Discover Your Archetype<span> <?php 
                 if (isset($_SESSION['username'])) {
                     echo htmlspecialchars($_SESSION['username']);
                 } else {
                     echo "Guest";
                 }
             ?></span></h1>             
-        <p>Welcome to Archetype Insight Discover your true self through Carl Jung’s archetypes. Take our interactive quiz, gain deep personality insights, and explore self-improvement strategies. 
-            Join a supportive community and embark on a transformative journey of self-awareness and growth..</p>             
+        <p>
+Welcome to ANINAG. Discover your unique archetype through our Filipino-based personality inventory. Take our interactive quiz to gain meaningful insights into your personality 
+            traits, patterns, and tendencies. Explore your results and understand how your archetype reflects who you are.</p>             
         <div class="cta-buttons">                 
             <a href="#about" class="hero-btn">About us</a>                 
             <a href="#" onclick="checkAuthBeforeQuiz()" class="hero-btn-outline">Take a Quiz</a>          
@@ -1373,36 +1374,41 @@ footer::before {
         }
 
         function checkAuthBeforeQuiz() {
-            const isLoggedIn = localStorage.getItem('userToken'); // Replace with your auth check
-            
-            if (isLoggedIn) {
-                window.location.href = "quiz.php";
-            } else {
-                // Custom styled SweetAlert
-                Swal.fire({
-                    title: 'Sign In Required',
-                    text: 'You need to sign in before taking the quiz.',
-                    icon: 'info',
-                    iconColor: '#D32F2F',
-                    showCancelButton: true,
-                    confirmButtonText: 'Sign In',
-                    cancelButtonText: 'Cancel',
-                    customClass: {
-                        container: 'custom-auth-modal',
-                        popup: 'custom-auth-modal-popup',
-                        title: 'custom-auth-modal-title',
-                        htmlContainer: 'custom-auth-modal-content',
-                        confirmButton: 'custom-auth-modal-confirm',
-                        cancelButton: 'custom-auth-modal-cancel'
-                    },
-                    buttonsStyling: true
-                }).then((result) => {
-                    if (result.isConfirmed) {
-                        window.location.href = "user_login.php";
-                    }
-                });
+    const isLoggedIn = localStorage.getItem('userToken'); // Replace with your auth check
+    
+    if (isLoggedIn) {
+        window.location.href = "quiz.php";
+    } else {
+        Swal.fire({
+            title: 'Sign In Required',
+            text: 'You need to sign in before taking the quiz.',
+            icon: 'info',
+            iconColor: '#D32F2F',
+            showCancelButton: true,
+            confirmButtonText: 'Sign In',
+            cancelButtonText: 'Sign Up', // changed text
+            customClass: {
+                container: 'custom-auth-modal',
+                popup: 'custom-auth-modal-popup',
+                title: 'custom-auth-modal-title',
+                htmlContainer: 'custom-auth-modal-content',
+                confirmButton: 'custom-auth-modal-confirm',
+                cancelButton: 'custom-auth-modal-cancel'
+            },
+            buttonsStyling: true
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // Sign In
+                window.location.href = "user_login.php";
+            } else if (result.dismiss === Swal.DismissReason.cancel) {
+                // Sign Up
+                window.location.href = "user_register.php";
             }
-        }
+        });
+    }
+}
+
     </script>
 </body>
+
 </html>

@@ -121,7 +121,7 @@ You value wisdom, truth, and deep understanding. You tend to reflect carefully b
             'meaning' => 'Congratulations! You are a Sage.
 You value wisdom, truth, and deep understanding. You tend to reflect carefully before making decisions and believe that knowledge should be guided by ethics and lived experience. People may naturally seek your advice because you listen attentively and offer thoughtful, well-considered guidance. While you may sometimes feel misunderstood or reserved, your strength lies in your ability to bring clarity, insight, and moral balance to complex situations.
 ',
-            'image' => 'images/sage_female.jpeg'
+            'image' => 'images/safe_female.jpeg'
         ]
     ],
     'creator' => [
@@ -604,4 +604,5 @@ if ($stage === 'result' && $gender) {
         });
     </script>
 </body>
+
 </html>

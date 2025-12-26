@@ -1210,21 +1210,29 @@ Welcome to ANINAG. Discover your unique archetype through our Filipino-based per
             <img src="images/about.png" alt="Interior Design Team">
         </div>
         
-        <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+       <div class="about-card" data-aos="fade-up" data-aos-delay="100">
             <i class="fas fa-history about-card-icon"></i>
-            <h3>Archetype Theory</h3>
-            <p>DigiArchetypes are universal, recurring symbols or characters in mythology, dreams, literature, and human experience. Carl Jung, a renowned Swiss psychologist, proposed that these archetypes represent fundamental human experiences and psychological patterns. The theory suggests that every individual carries several archetypes within their unconscious mind that influence our behaviors, relationships, and self-perception.</p>
+            <h3>Archetypes </h3>
+            <p>Archetypes originate from Carl Jung’s Analytical Theory, which proposes that the human psyche includes a collective unconscious shared across individuals. Within this collective unconscious are archetypes—universal and recurring patterns that influence how people think, feel, and behave. 
+                These patterns appear across cultures through myths, symbols, stories, and common human roles.</p>
+            <br>
+             <p>Building on Jung’s analytical concepts, Carol S. Pearson organized these archetypes into a structured archetype framework 
+                 that allows archetypal patterns to be identified and described in a systematic manner.</p>
+            <br>
+            <p>ANINAG is theory-driven by Jung’s Analytical Theory and adopts Pearson’s archetype 
+                framework as the foundation of its web-based personality inventory.</p>
+            <br>
             
             <h4>Why Archetypes Matter</h4>
-            <p>Understanding your archetypes can give you insights into your behavior, motivations, and struggles, leading to greater self-awareness. Embracing your archetypes can promote healing, personal growth, and better relationships.</p>
+            <p>Archetypes provide a structured way to understand recurring patterns in personality, behavior, and motivation. Examining dominant archetypes offers 
+                insight into how individuals typically perceive situations, relate to others, and respond to challenges.</p>
             
-            <p>By identifying which archetypes are dominant in your personality, you can:</p>
+            <p>By identifying prominent archetypes, individuals can:</p>
             <ul>
-                <li><span>Gain clarity about your unconscious patterns</span></li>
-                <li>Develop greater self-compassion</li>
-                <li>Make more aligned life and career choices</li>
-                <li>Improve your relationships with others</li>
-                <li>Navigate life challenges with greater wisdom</li>
+                <li><span>Recognize recurring behavioral and thought patterns</span></li>
+                <li>Understand characteristic motivations and tendencies</li>
+                <li>Increase awareness of interpersonal and social responses</li>
+                <li>Identify common approaches to life situations</li>
             </ul>
         </div>
     </div>
@@ -1412,3 +1420,4 @@ Welcome to ANINAG. Discover your unique archetype through our Filipino-based per
 </body>
 
 </html>
+

@@ -406,7 +406,7 @@
         const declineRadio = document.getElementById('decline');
 
         if (agreeRadio.checked) {
-            window.location.href = "user_Register.php";
+            window.location.href = "user_register.php";
         } else if (declineRadio.checked) {
             window.location.href = "index.php";
         }
@@ -421,4 +421,5 @@
 </script>
 
 </body>
+
 </html>

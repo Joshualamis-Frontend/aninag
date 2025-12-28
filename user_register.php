@@ -265,7 +265,7 @@ body {
     <div class="main-container">
         <div class="register-container">
             <div class="register-image">
-            <h1 class="mb-4">ARCHETYPE</h1>
+            <h1 class="mb-4">ANINAG</h1>
            
             </div>
             <div class="register-form">
@@ -437,3 +437,4 @@ document.getElementById('registerForm').addEventListener('submit', function(e) {
     </script>
 </body>
 </html>
+

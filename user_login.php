@@ -106,7 +106,7 @@
 
             .login-form {
                 flex: 1;
-                padding: 40px;
+                padding: 50px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -204,7 +204,7 @@
         <div class="main-container">
             <div class="login-container">
                 <div class="login-image">
-                    <h1 class="mb-4">ARCHETYPE</h1>
+                    <h1 class="mb-4">ANINAG</h1>
                     <p>Discover your archetype uncover your hidden personality traits</P>
                 </div>
                 <div class="login-form">
@@ -260,4 +260,5 @@
     </body>
 
     </html>
+
 
